@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "EM Kuru Temizleme | Profesyonel Kuru Temizleme Hizmeti",
-    template: "%s | EM Kuru Temizleme",
+    default: "Hasel Kuru Temizleme | Profesyonel Kuru Temizleme Hizmeti",
+    template: "%s | Hasel Kuru Temizleme",
   },
 
   description:
-    "EM Kuru Temizleme; kuru temizleme, ütüleme, ev tekstili temizleme, halı yıkama, lostra ve çanta temizleme hizmetleri sunar.",
+    "Hasel Kuru Temizleme; kuru temizleme, ütüleme, ev tekstili temizleme, halı yıkama, lostra ve çanta temizleme hizmetleri sunar.",
 
   keywords: [
     "kuru temizleme",
@@ -29,24 +29,24 @@ export const metadata: Metadata = {
     "halı yıkama",
     "lostra",
     "çanta temizleme",
-    "EM Kuru Temizleme",
+    "Hasel Kuru Temizleme",
   ],
 
   authors: [
     {
-      name: "EM Kuru Temizleme",
+      name: "Hasel Kuru Temizleme",
     },
   ],
 
-  creator: "EM Kuru Temizleme",
+  creator: "Hasel Kuru Temizleme",
 
   openGraph: {
-    title: "EM Kuru Temizleme | Profesyonel Temizlik ve Bakım",
+    title: "Hasel Kuru Temizleme | Profesyonel Temizlik ve Bakım",
     description:
       "Kıyafetlerinizden ev tekstillerine kadar profesyonel temizlik ve bakım hizmetleri.",
     type: "website",
     locale: "tr_TR",
-    siteName: "EM Kuru Temizleme",
+    siteName: "Hasel Kuru Temizleme",
   },
 
   robots: {

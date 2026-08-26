@@ -8,7 +8,7 @@ const services = [
     description:
       "Günlük kıyafetlerden özel giysilere kadar profesyonel kuru temizleme hizmeti.",
     image:
-      "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=1200&q=85",
+  "/images/services/dry-cleaning/dry-cleaning.jpg",
     link: "/hizmetler/kuru-temizleme",
   },
   {
@@ -17,7 +17,7 @@ const services = [
     description:
       "Koltuklarınız için derinlemesine, hijyenik ve profesyonel temizlik hizmeti.",
     image:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=85",
+  "/images/services/dry-cleaning/koltuk-yikama/koltuk-yikama.jpg",
     link: "/hizmetler/koltuk-yikama",
   },
   {
@@ -26,7 +26,7 @@ const services = [
     description:
       "Halılarınız için hijyenik, özenli ve profesyonel yıkama hizmeti.",
     image:
-      "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=1200&q=85",
+  "/images/services/hali-yikama/hali-yikama.jpg",
     link: "/hizmetler/hali-yikama",
   },
   {
@@ -35,7 +35,7 @@ const services = [
     description:
       "Perde, yorgan, battaniye ve minderleriniz için özel bakım ve temizlik.",
     image:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=85",
+  "/images/services/ev-tekstili/ev-tekstili.jpg",
     link: "/hizmetler/ev-tekstili",
   },
 ];

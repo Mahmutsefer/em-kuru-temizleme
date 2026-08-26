@@ -5,7 +5,7 @@ export default function Footer() {
 
         <div className="footer-brand">
           <a href="/" className="footer-logo">
-            EM KURU TEMİZLEME
+            HASEL KURU TEMİZLEME
           </a>
 
           <p>
@@ -69,7 +69,7 @@ export default function Footer() {
       <div className="footer-bottom">
 
         <p>
-          © 2026 EM Kuru Temizleme. Tüm hakları saklıdır.
+          © 2026 Hasel Kuru Temizleme. Tüm hakları saklıdır.
         </p>
 
         <a href="#iletisim">

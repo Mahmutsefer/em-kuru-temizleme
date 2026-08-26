@@ -2,31 +2,79 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import DryCleaningGallery from "@/components/DryCleaningGallery";
+
+
 const services = {
   "kuru-temizleme": {
     title: "Kuru Temizleme",
     subtitle: "Giysileriniz için profesyonel ve özenli bakım.",
     description:
       "Kıyafetlerinizin kumaş ve ürün özelliklerine uygun profesyonel kuru temizleme hizmeti sunuyoruz.",
-    image:
-      "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=1800&q=85",
-    points: [
-      "Takım elbiseler",
-      "Gömlek ve pantolonlar",
-      "Elbiseler",
-      "Mont ve kabanlar",
-      "Özel kumaşlar",
-      "Hassas giysiler",
-    ],
-  },
+   image: "/images/services/dry-cleaning/dry-cleaning.jpg",
 
+  points: [
+  "Gömlek",
+  "Pantolon",
+  "Ceket",
+  "Takım Elbise",
+  "Kaban",
+  "Mont",
+  "Elbise",
+  "Kazak",
+  "Tişört",
+  "Palto",
+],
+
+items: [
+  {
+    title: "Gömlek",
+    image: "/images/services/dry-cleaning/shirt.jpg",
+  },
+  {
+    title: "Pantolon",
+    image: "/images/services/dry-cleaning/trousers.jpg",
+  },
+  {
+    title: "Ceket",
+    image: "/images/services/dry-cleaning/blazer.jpg",
+  },
+  {
+    title: "Takım Elbise",
+    image: "/images/services/dry-cleaning/suit.jpg",
+  },
+  {
+    title: "Kaban",
+    image: "/images/services/dry-cleaning/coat.jpg",
+  },
+  {
+    title: "Mont",
+    image: "/images/services/dry-cleaning/jacket.jpg",
+  },
+  {
+    title: "Elbise",
+    image: "/images/services/dry-cleaning/dress.jpg",
+  },
+  {
+    title: "Kazak",
+    image: "/images/services/dry-cleaning/sweater.jpg",
+  },
+  {
+    title: "Tişört",
+    image: "/images/services/dry-cleaning/tshirt.jpg",
+  },
+  {
+    title: "Palto",
+    image: "/images/services/dry-cleaning/overcoat.jpg",
+  },
+],
+},
   "koltuk-yikama": {
     title: "Koltuk Yıkama",
     subtitle: "Koltuklarınız için profesyonel ve hijyenik temizlik.",
     description:
       "Koltuklarınızın kumaş ve yapısına uygun profesyonel yıkama ve bakım hizmeti sunuyoruz.",
-    image:
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1800&q=85",
+   image: "/images/services/dry-cleaning/koltuk-yikama/koltuk-yikama.jpg",
     points: [
       "Koltuk takımları",
       "Kanepe ve kanepeler",
@@ -42,8 +90,8 @@ const services = {
     subtitle: "Halılarınız için profesyonel temizlik.",
     description:
       "Halılarınızın yapısına ve özelliklerine uygun profesyonel yıkama ve bakım hizmeti.",
-    image:
-      "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=1800&q=85",
+image:
+  "/images/services/hali-yikama/hali-yikama.jpg",
     points: [
       "Makine halıları",
       "El dokuma halılar",
@@ -69,6 +117,28 @@ const services = {
       "Özel kumaşlar",
       "Ev tekstili ürünleri",
     ],
+    items: [
+  {
+    title: "Perde",
+    image: "/images/services/ev-tekstili/perde.jpg",
+    price: "150₺",
+  },
+  {
+    title: "Yorgan",
+    image: "/images/services/ev-tekstili/yorgan.jpg",
+    price: "200₺",
+  },
+  {
+    title: "Battaniye",
+    image: "/images/services/ev-tekstili/battaniye.jpg",
+    price: "300₺",
+  },
+  {
+    title: "Minder",
+    image: "/images/services/ev-tekstili/minder.jpg",
+    price: "400₺",
+  },
+],
   },
 };
 
@@ -85,21 +155,21 @@ export async function generateMetadata({
 
   if (!service) {
     return {
-      title: "Hizmet Bulunamadı | EM Kuru Temizleme",
-      description: "EM Kuru Temizleme hizmet sayfası.",
+      title: "Hizmet Bulunamadı | Hasel Kuru Temizleme",
+      description: "Hasel Kuru Temizleme hizmet sayfası.",
     };
   }
 
   return {
-    title: `${service.title} | EM Kuru Temizleme`,
+    title: `${service.title} | Hasel Kuru Temizleme`,
     description: service.description,
 
     openGraph: {
-      title: `${service.title} | EM Kuru Temizleme`,
+      title: `${service.title} | Hasel Kuru Temizleme`,
       description: service.description,
       type: "website",
       locale: "tr_TR",
-      siteName: "EM Kuru Temizleme",
+      siteName: "Hasel Kuru Temizleme",
       images: [
         {
           url: service.image,
@@ -137,11 +207,13 @@ export default async function ServicePage({
     );
   }
 
-  return (
+ return (
   <>
     <Navbar />
 
     <main className="service-page">
+
+      {/* HERO */}
       <section
         className="service-hero"
         style={{
@@ -153,108 +225,123 @@ export default async function ServicePage({
         }}
       >
         <div className="service-hero-content">
+
           <Link href="/#hizmetler" className="back-link">
             ← Tüm Hizmetler
           </Link>
 
-          <p>EM KURU TEMİZLEME</p>
+          <p>HASEL KURU TEMİZLEME</p>
 
           <h1>{service.title}</h1>
 
-          <p className="service-subtitle">{service.subtitle}</p>
+          <p className="service-subtitle">
+            {service.subtitle}
+          </p>
+
         </div>
       </section>
 
-      <section className="service-information">
-        <div className="service-information-grid">
-          <div>
-            <p className="section-label">HİZMETİMİZ</p>
 
-            <h2>Özenli temizlik, profesyonel bakım.</h2>
+      {/* SERVICE INFORMATION */}
+    {/* SERVICE INFORMATION */}
+<section className="service-information">
 
-            <p className="service-description">
-              {service.description}
-            </p>
+  {(slug === "kuru-temizleme" || slug === "ev-tekstili") &&
+  "items" in service && (
+    <DryCleaningGallery
+      items={service.items}
+    />
+)}
 
-            <a href="tel:+905000000000" className="service-button">
-              Bizi Arayın →
-            </a>
-          </div>
-
-          <div>
-            <p className="section-label">Neler Yapıyoruz?</p>
-
-            <div className="service-points">
-              {service.points.map((point, index) => (
-                <div key={point}>
-                  <span>
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-
-                  <p>{point}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
+</section>
+      {/* PROCESS */}
       <section className="service-process">
-        <div>
-          <p className="section-label">SÜRECİMİZ</p>
 
-          <h2>Ürününüz bize ulaştığında.</h2>
+        <div>
+
+          <p className="section-label">
+            SÜRECİMİZ
+          </p>
+
+          <h2>
+            Ürününüz bize ulaştığında.
+          </h2>
 
           <div className="process-grid">
+
             <div>
               <span>01</span>
+
               <h3>İnceleme</h3>
+
               <p>
-                Ürünün kumaşını, malzemesini ve bakım özelliklerini
-                inceliyoruz.
+                Ürünün kumaşını, malzemesini ve bakım
+                özelliklerini inceliyoruz.
               </p>
             </div>
 
+
             <div>
               <span>02</span>
+
               <h3>Temizlik</h3>
+
               <p>
                 Ürüne uygun profesyonel temizlik yöntemini
                 uyguluyoruz.
               </p>
             </div>
 
+
             <div>
               <span>03</span>
+
               <h3>Kontrol</h3>
+
               <p>
                 İşlem sonrasında ürünün son kontrolünü
                 gerçekleştiriyoruz.
               </p>
             </div>
+
           </div>
+
         </div>
+
       </section>
 
-      <section className="service-cta">
-        <div>
-          <p>EM KURU TEMİZLEME</p>
 
-          <h2>Ürününüz için doğru bakımı seçin.</h2>
+      {/* CTA */}
+      <section className="service-cta">
+
+        <div>
+
+          <p>HASEL KURU TEMİZLEME</p>
+
+          <h2>
+            Ürününüz için doğru bakımı seçin.
+          </h2>
 
           <div>
-            <a href="tel:+905000000000">Bizi Arayın</a>
+
+            <a href="tel:+905000000000">
+              Bizi Arayın
+            </a>
 
             <a href="https://wa.me/905000000000">
               WhatsApp
             </a>
+
           </div>
+
         </div>
+
       </section>
-   
+
     </main>
 
     <Footer />
+
   </>
-  );
+);
 }

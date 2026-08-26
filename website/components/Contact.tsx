@@ -66,7 +66,7 @@ export default function Contact() {
             src="https://www.google.com/maps?q=Istanbul,Turkey&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="EM Kuru Temizleme Konumu"
+            title="Hasel Kuru Temizleme Konumu"
           />
         </div>
 

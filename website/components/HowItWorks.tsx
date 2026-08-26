@@ -1,65 +1,88 @@
+import {
+  ArrowRight,
+  Home,
+  Sparkles,
+  Truck,
+} from "lucide-react";
+
+const steps = [
+  {
+    number: "01",
+    icon: Home,
+    title: "Kapınızdan Alıyoruz",
+    description:
+      "Ürünlerinizi sizin için adresinizden teslim alıyor, güvenle temizlik sürecimize taşıyoruz.",
+  },
+  {
+    number: "02",
+    icon: Sparkles,
+    title: "Özenle Temizliyoruz",
+    description:
+      "Her ürünü kumaşına, yapısına ve ihtiyacına göre değerlendiriyor, uygun profesyonel bakım uyguluyoruz.",
+  },
+  {
+    number: "03",
+    icon: Truck,
+    title: "Temizliğini Tamamlayıp Getiriyoruz",
+    description:
+      "İşlemi tamamlanan ürünlerin son kontrollerini yapıyor, özenle hazırlayıp adresinize teslim ediyoruz.",
+  },
+];
+
 export default function HowItWorks() {
-  const steps = [
-    {
-      number: "01",
-      title: "Ürününüzü Bize Getirin",
-      description:
-        "Temizlenmesini istediğiniz kıyafet veya tekstil ürününüzü mağazamıza getirin.",
-    },
-    {
-      number: "02",
-      title: "Özenli Temizlik",
-      description:
-        "Ürününüzü kumaş ve malzeme özelliklerine göre değerlendirip uygun yöntemi uyguluyoruz.",
-    },
-    {
-      number: "03",
-      title: "Hazır Teslim Alın",
-      description:
-        "Temizlik ve son kontroller tamamlandıktan sonra ürününüzü özenle teslim ediyoruz.",
-    },
-  ];
-
   return (
-    <section className="how-it-works">
-      <div className="how-it-works-container">
+    <section id="nasil-calisir" className="em-process">
+      <div className="em-process-container">
 
-        <div className="how-it-works-heading">
+        <div className="em-process-heading">
           <div>
-            <p className="section-label">NASIL ÇALIŞIYORUZ?</p>
+            <p className="section-label">NASIL ÇALIŞIR?</p>
 
             <h2>
-              Temizlik sürecimiz,
+              Temizliğin
               <br />
-              baştan sona özenli.
+              en kolay hali.
             </h2>
           </div>
 
-          <p className="how-it-works-intro">
-            Ürünlerinizi teslim aldığımız andan teslim ettiğimiz ana
-            kadar her aşamada dikkatli ve profesyonel bir süreç
-            uyguluyoruz.
+          <p className="em-process-intro">
+            Siz ürünlerinizi hazırlayın, gerisini bize bırakın. EM olarak
+            temizlik sürecinin her aşamasında özenle çalışıyoruz.
           </p>
         </div>
 
-        <div className="steps-grid">
-          {steps.map((step) => (
-            <div className="step" key={step.number}>
+        <div className="em-process-grid">
+          {steps.map((step, index) => {
+            const Icon = step.icon;
 
-              <div className="step-top">
-                <span className="step-number">
-                  {step.number}
-                </span>
+            return (
+              <div className="em-process-card" key={step.number}>
 
-                <span className="step-line" />
+                <div className="em-process-visual">
+
+                
+
+                  <div className="em-process-icon">
+                    <Icon size={30} strokeWidth={1.8} />
+                  </div>
+
+                  {index < steps.length - 1 && (
+                    <div className="em-process-line">
+                      <span />
+                      <ArrowRight size={18} strokeWidth={1.8} />
+                    </div>
+                  )}
+
+                </div>
+
+                <div className="em-process-content">
+                  <h3>{step.title}</h3>
+                  <p>{step.description}</p>
+                </div>
+
               </div>
-
-              <h3>{step.title}</h3>
-
-              <p>{step.description}</p>
-
-            </div>
-          ))}
+            );
+          })}
         </div>
 
       </div>
