@@ -20,37 +20,20 @@ const services = {
     ],
   },
 
-  utuleme: {
-    title: "Ütüleme",
-    subtitle: "Kıyafetlerinize kusursuz bir görünüm.",
+  "koltuk-yikama": {
+    title: "Koltuk Yıkama",
+    subtitle: "Koltuklarınız için profesyonel ve hijyenik temizlik.",
     description:
-      "Kıyafetlerinizin kumaş özelliklerine uygun profesyonel ütüleme ve son dokunuş hizmeti.",
+      "Koltuklarınızın kumaş ve yapısına uygun profesyonel yıkama ve bakım hizmeti sunuyoruz.",
     image:
-      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=1800&q=85",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1800&q=85",
     points: [
-      "Gömlek ütüleme",
-      "Pantolon ütüleme",
-      "Elbise ütüleme",
-      "Takım elbise bakımı",
-      "Hassas kumaşlar",
-      "Profesyonel son dokunuş",
-    ],
-  },
-
-  "ev-tekstili": {
-    title: "Ev Tekstili Temizleme",
-    subtitle: "Evinizdeki tekstil ürünleri için özel bakım.",
-    description:
-      "Perde, battaniye, yorgan ve diğer ev tekstili ürünleriniz için profesyonel temizlik ve bakım.",
-    image:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1800&q=85",
-    points: [
-      "Perdeler",
-      "Battaniyeler",
-      "Yorganlar",
-      "Koltuk tekstilleri",
-      "Özel kumaşlar",
-      "Ev tekstili ürünleri",
+      "Koltuk takımları",
+      "Kanepe ve kanepeler",
+      "Berjerler",
+      "Sandalyeler",
+      "Kumaş koltuklar",
+      "Derinlemesine temizlik",
     ],
   },
 
@@ -71,41 +54,23 @@ const services = {
     ],
   },
 
-  lostra: {
-    title: "Lostra",
-    subtitle: "Ayakkabı ve deri ürünleriniz için özel bakım.",
+  "ev-tekstili": {
+    title: "Ev Tekstili",
+    subtitle: "Evinizdeki tekstil ürünleri için özel bakım.",
     description:
-      "Ayakkabı ve deri ürünlerinizin temizliği, bakımı ve görünümünün yenilenmesi için profesyonel hizmet.",
+      "Perde, yorgan, battaniye ve minder gibi ev tekstili ürünleriniz için profesyonel temizlik ve bakım hizmeti.",
     image:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1800&q=85",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1800&q=85",
     points: [
-      "Ayakkabı temizliği",
-      "Deri bakım",
-      "Ayakkabı parlatma",
-      "Renk yenileme",
-      "Süet bakım",
-      "Özel deri ürünleri",
-    ],
-  },
-
-  "canta-temizleme": {
-    title: "Çanta Temizleme",
-    subtitle: "Çantalarınız için özenli temizlik ve bakım.",
-    description:
-      "Çantalarınızın malzemesine ve yapısına uygun profesyonel temizlik ve bakım hizmeti.",
-    image:
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1800&q=85",
-    points: [
-      "Deri çantalar",
-      "Süet çantalar",
-      "Kumaş çantalar",
-      "Günlük çantalar",
-      "Leke temizliği",
-      "Özel bakım",
+      "Perdeler",
+      "Yorganlar",
+      "Battaniyeler",
+      "Minderler",
+      "Özel kumaşlar",
+      "Ev tekstili ürünleri",
     ],
   },
 };
-
 
 type ServiceSlug = keyof typeof services;
 

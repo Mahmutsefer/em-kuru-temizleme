@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
-import Gallery from "@/components/Gallery";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import WhyUs from "@/components/WhyUs";
 import Contact from "@/components/Contact";
@@ -18,7 +17,6 @@ export default function Home() {
         <Hero />
         <Services />
         <HowItWorks />
-        <Gallery />
         <WhyUs />
         <Contact />
       </main>

@@ -13,48 +13,30 @@ const services = [
   },
   {
     number: "02",
-    title: "Ütüleme",
+    title: "Koltuk Yıkama",
     description:
-      "Kıyafetlerinize kusursuz görünüm kazandıran özenli ütüleme hizmeti.",
+      "Koltuklarınız için derinlemesine, hijyenik ve profesyonel temizlik hizmeti.",
     image:
-      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=1200&q=85",
-    link: "/hizmetler/utuleme",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=85",
+    link: "/hizmetler/koltuk-yikama",
   },
   {
     number: "03",
-    title: "Ev Tekstili",
-    description:
-      "Perde, battaniye, yorgan ve diğer ev tekstilleri için özel bakım.",
-    image:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=85",
-    link: "/hizmetler/ev-tekstili",
-  },
-  {
-    number: "04",
     title: "Halı Yıkama",
     description:
-      "Halılarınız için hijyenik ve profesyonel yıkama hizmeti.",
+      "Halılarınız için hijyenik, özenli ve profesyonel yıkama hizmeti.",
     image:
       "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=1200&q=85",
     link: "/hizmetler/hali-yikama",
   },
   {
-    number: "05",
-    title: "Lostra",
+    number: "04",
+    title: "Ev Tekstili",
     description:
-      "Ayakkabı ve deri ürünleriniz için bakım, temizlik ve yenileme.",
+      "Perde, yorgan, battaniye ve minderleriniz için özel bakım ve temizlik.",
     image:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=85",
-    link: "/hizmetler/lostra",
-  },
-  {
-    number: "06",
-    title: "Çanta Temizleme",
-    description:
-      "Çantalarınızın malzemesine uygun profesyonel temizlik ve bakım.",
-    image:
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=85",
-    link: "/hizmetler/canta-temizleme",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=85",
+    link: "/hizmetler/ev-tekstili",
   },
 ];
 
@@ -62,7 +44,6 @@ export default function Services() {
   return (
     <section id="hizmetler" className="services-section">
       <div className="services-container">
-
         <div className="services-heading">
           <p className="section-label">HİZMETLERİMİZ</p>
 
@@ -111,7 +92,6 @@ export default function Services() {
             </Link>
           ))}
         </div>
-
       </div>
     </section>
   );
