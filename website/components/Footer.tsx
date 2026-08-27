@@ -63,21 +63,33 @@ export default function Footer() {
           
                     </div>
 
-          <div>
-            <span>ŞUBELERİMİZ</span>
+         <div>
+  <span>ŞUBELERİMİZ</span>
 
-            <a href="#">
-              Şube 1
-            </a>
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=Hasel+Kuru+Temizleme+Dikilitas+Istanbul"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Dikilitaş
+  </a>
 
-            <a href="#">
-              Şube 2
-            </a>
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=Hasel+Kuru+Temizleme+Fulya+Istanbul"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Fulya
+  </a>
 
-            <a href="#">
-              Şube 3
-            </a>
-          </div>
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=TGS+Hali+Yikama+Sisli+Istanbul"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    TGS Halı Yıkama
+  </a>
+</div>
 
         </div>
       </div>
