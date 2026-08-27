@@ -1,5 +1,4 @@
 import {
-  ArrowRight,
   Home,
   Sparkles,
   Truck,
@@ -46,7 +45,7 @@ export default function HowItWorks() {
           </div>
 
           <p className="em-process-intro">
-            Siz ürünlerinizi hazırlayın, gerisini bize bırakın. EM olarak
+            Siz ürünlerinizi hazırlayın, gerisini bize bırakın. Hasel Kuru Temizleme olarak
             temizlik sürecinin her aşamasında özenle çalışıyoruz.
           </p>
         </div>
@@ -66,12 +65,7 @@ export default function HowItWorks() {
                     <Icon size={30} strokeWidth={1.8} />
                   </div>
 
-                  {index < steps.length - 1 && (
-                    <div className="em-process-line">
-                      <span />
-                      <ArrowRight size={18} strokeWidth={1.8} />
-                    </div>
-                  )}
+                
 
                 </div>
 

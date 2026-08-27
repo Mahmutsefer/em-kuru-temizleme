@@ -1,3 +1,4 @@
+import BranchMap from "@/components/BranchMap";
 export default function Contact() {
   return (
     <section id="iletisim" className="contact">
@@ -61,14 +62,7 @@ export default function Contact() {
 
         </div>
 
-        <div className="contact-map">
-          <iframe
-            src="https://www.google.com/maps?q=Istanbul,Turkey&output=embed"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Hasel Kuru Temizleme Konumu"
-          />
-        </div>
+        <BranchMap />
 
       </div>
     </section>

@@ -1,17 +1,19 @@
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
 
-        <div className="footer-brand">
-          <a href="/" className="footer-logo">
-            HASEL KURU TEMİZLEME
-          </a>
-
-          <p>
-            Profesyonel temizlik ve bakım hizmetleri.
-          </p>
-        </div>
+       <div className="footer-brand">
+  <a href="/" className="footer-logo">
+    <Image
+  src="/images/default.svg"
+  alt="Hasel Kuru Temizleme"
+  width={300}
+  height={120}
+/>
+  </a>
+</div>
 
         <div className="footer-links">
 
@@ -27,7 +29,7 @@ export default function Footer() {
             </a>
 
             <a href="/#neden-em">
-              Neden EM?
+              Neden HASEL?
             </a>
 
             <a href="/#iletisim">
@@ -42,29 +44,44 @@ export default function Footer() {
               Kuru Temizleme
             </a>
 
-            <a href="/hizmetler/utuleme">
-              Ütüleme
+            
+            
+            <a href="/hizmetler/hali-yikama">
+              Halı Yıkama
+            </a>
+
+
+            <a href="/hizmetler/koltuk-yikama">
+              Koltuk Yıkama
             </a>
 
             <a href="/hizmetler/ev-tekstili">
               Ev Tekstili
             </a>
 
-            <a href="/hizmetler/hali-yikama">
-              Halı Yıkama
+
+          
+                    </div>
+
+          <div>
+            <span>ŞUBELERİMİZ</span>
+
+            <a href="#">
+              Şube 1
             </a>
 
-            <a href="/hizmetler/lostra">
-              Lostra
+            <a href="#">
+              Şube 2
             </a>
 
-            <a href="/hizmetler/canta-temizleme">
-              Çanta Temizleme
+            <a href="#">
+              Şube 3
             </a>
           </div>
 
         </div>
       </div>
+      
 
       <div className="footer-bottom">
 

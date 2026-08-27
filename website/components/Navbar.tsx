@@ -1,13 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
-
 const navItems = [
-  { label: "Anasayfa", href: "#" },
-  { label: "Hizmetlerimiz", href: "#hizmetler" },
-{ label: "Şubelerimiz", href: "#subelerimiz" },
-  { label: "Fiyatlar", href: "#fiyatlar" },
-  { label: "İletişim", href: "#iletisim" },
+ { label: "Anasayfa", href: "/" },
+{ label: "Hizmetlerimiz", href: "/#hizmetler" },
+{ label: "Şubelerimiz", href: "/#subelerimiz" },
+ { label: "Fiyatlar", href: "/#fiyatlar" },
+ { label: "İletişim", href: "/#iletisim" },
 ];
 
 export default function Navbar() {
@@ -18,8 +18,14 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-container">
-        <a href="#" className="navbar-logo" onClick={closeMenu}>
-  HASEL KURU TEMİZLEME
+      <a href="#" className="navbar-logo" onClick={closeMenu}>
+  <Image
+   src="/images/default.svg"
+    alt="Hasel Kuru Temizleme"
+    width={72}
+    height={72}
+    priority
+  />
 </a>
 
         <nav className={`navbar-nav ${menuOpen ? "open" : ""}`}>

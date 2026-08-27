@@ -50,7 +50,7 @@ export default function Services() {
           <h2>
             İhtiyacınız olan
             <br />
-            temizlik hizmeti EM&apos;de.
+            temizlik hizmeti Hasel Kuru Temizleme&apos;de.
           </h2>
         </div>
 
@@ -73,9 +73,7 @@ export default function Services() {
 
                   <div className="service-image-overlay" />
 
-                  <span className="service-number">
-                    {service.number}
-                  </span>
+                
                 </div>
 
                 <div className="service-content">

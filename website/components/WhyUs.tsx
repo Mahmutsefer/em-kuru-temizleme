@@ -1,3 +1,4 @@
+import Image from "next/image";
 const reasons = [
   {
     number: "01",
@@ -28,10 +29,10 @@ export default function WhyUs() {
 
           <div>
             <p className="section-label">
-              NEDEN EM?
+              NEDEN HASEL ?
             </p>
 
-            <h2>
+            <h2 className="why-us-title">
               Her ürüne özel,
               <br />
               özenli bakım.
@@ -45,9 +46,14 @@ export default function WhyUs() {
               özelliklerine uygun şekilde bakımını da yapıyoruz.
             </p>
 
-            <span className="why-us-mark">
-              EM
-            </span>
+            <div className="why-us-mark">
+  <Image
+   src="/images/default.svg"
+    alt="Hasel Kuru Temizleme"
+    width={70}
+    height={70}
+  />
+</div>
           </div>
 
         </div>
