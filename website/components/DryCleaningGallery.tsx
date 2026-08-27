@@ -26,12 +26,8 @@ export default function DryCleaningGallery({
           </div>
 
           <div className="dry-cleaning-item-info">
-            <h3>{item.title}</h3>
-
-            <div className="dry-cleaning-item-price">
-              {item.price || "100 TL"}
-            </div>
-          </div>
+  <h3>{item.title}</h3>
+</div>
         </div>
       ))}
     </div>
