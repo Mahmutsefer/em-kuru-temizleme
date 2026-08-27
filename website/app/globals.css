@@ -810,15 +810,15 @@ footer p {
 
 /* Hamburger animation */
 
-.menu-button.open span:nth-child(1) {
+.menu-button.active span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
-.menu-button.open span:nth-child(2) {
+.menu-button.active span:nth-child(2) {
   opacity: 0;
 }
 
-.menu-button.open span:nth-child(3) {
+.menu-button.active span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
 
@@ -833,18 +833,15 @@ footer p {
     display: flex;
   }
 
-  header nav {
+  .navbar-nav {
     position: absolute;
-
     top: 70px;
     left: 0;
-
     width: 100%;
 
     display: flex;
     flex-direction: column;
     align-items: stretch;
-
     gap: 0;
 
     padding: 10px 20px 25px;
@@ -857,6 +854,7 @@ footer p {
     transform: translateY(-20px);
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
 
     transition:
       opacity 0.25s ease,
@@ -864,21 +862,20 @@ footer p {
       visibility 0.25s ease;
   }
 
-  header nav.open {
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
-}
+  .navbar-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 
-  header nav a {
+  .navbar-nav a {
     padding: 16px 5px;
-
     border-bottom: 1px solid var(--border);
-
     font-size: 15px;
   }
 
-  header nav a:last-child {
+  .navbar-nav a:last-child {
     border-bottom: 0;
   }
 
