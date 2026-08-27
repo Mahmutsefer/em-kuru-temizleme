@@ -4671,3 +4671,286 @@ background: #B0BDA3;
     z-index: 10;
   }
 }
+/* =========================================
+   PRICE CARDS
+   ========================================= */
+
+.prices-page {
+  background: var(--cream);
+  min-height: 100vh;
+}
+
+.prices-container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.prices-hero {
+  padding: 100px 0 60px;
+}
+
+.prices-hero .section-label {
+  margin-bottom: 18px;
+}
+
+.prices-hero h1 {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.prices-hero > .prices-container > p:last-child {
+  max-width: 600px;
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.prices-section {
+  padding: 20px 0 100px;
+}
+
+/* Cards closed */
+.prices-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+/* When one card is open on desktop,
+   show only the open card */
+.prices-grid.has-open-card {
+  grid-template-columns: 1fr;
+}
+
+.price-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--white);
+  box-shadow: 0 10px 35px rgba(38, 60, 50, 0.06);
+  transition: all 0.35s ease;
+}
+
+.price-card.open {
+  width: 100%;
+}
+
+/* Card header */
+.price-card-header {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Image */
+.price-card-image {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.price-card-image img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.price-card:hover .price-card-image img {
+  transform: scale(1.04);
+}
+
+/* Title area */
+.price-card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 28px;
+}
+
+.price-card-title h2 {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.price-card-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--green-dark);
+  font-size: 27px;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.price-card:hover .price-card-arrow {
+  background: var(--green-dark);
+  color: var(--white);
+}
+
+/* Open table */
+.price-card-table {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.4s ease,
+    opacity 0.3s ease;
+}
+
+.price-card-table.visible {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.price-card-table > .price-table {
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Price table */
+.price-table {
+  border-top: 1px solid var(--border);
+}
+
+.price-table-header,
+.price-table-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 30px;
+  align-items: center;
+  padding: 15px 28px;
+}
+
+.price-table-header {
+  background: var(--green-dark);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.price-table-row {
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.price-table-row:last-child {
+  border-bottom: 0;
+}
+
+.price-table-row span:last-child {
+  color: var(--green-dark);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 900px) {
+  .prices-container {
+    width: min(100% - 28px, 700px);
+  }
+
+  .prices-hero {
+    padding: 70px 0 40px;
+  }
+
+  .prices-hero h1 {
+    font-size: clamp(40px, 12vw, 60px);
+  }
+
+  .prices-section {
+    padding-top: 10px;
+    padding-bottom: 70px;
+  }
+
+  .prices-grid,
+  .prices-grid.has-open-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .price-card {
+    width: 100%;
+  }
+
+  .price-card-image {
+    height: 220px;
+  }
+
+  .price-card-title {
+    padding: 20px;
+  }
+
+  .price-card-title h2 {
+    font-size: 24px;
+  }
+
+  .price-card-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+  }
+
+  .price-table-header,
+  .price-table-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 15px;
+    padding: 13px 18px;
+  }
+
+  .price-table-row {
+    font-size: 14px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .prices-container {
+    width: calc(100% - 20px);
+  }
+
+  .price-card-image {
+    height: 190px;
+  }
+
+  .price-card-title {
+    padding: 18px;
+  }
+
+  .price-card-title h2 {
+    font-size: 21px;
+  }
+
+  .price-table-header,
+  .price-table-row {
+    padding: 12px 14px;
+  }
+
+  .price-table-row {
+    font-size: 13px;
+  }
+}
