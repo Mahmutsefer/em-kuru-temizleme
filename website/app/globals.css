@@ -864,11 +864,11 @@ footer p {
       visibility 0.25s ease;
   }
 
-  header nav.mobile-open {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
+  header nav.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
 
   header nav a {
     padding: 16px 5px;
