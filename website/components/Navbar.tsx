@@ -6,7 +6,7 @@ const navItems = [
  { label: "Anasayfa", href: "/" },
 { label: "Hizmetlerimiz", href: "/#hizmetler" },
 { label: "Şubelerimiz", href: "/#subelerimiz" },
- { label: "Fiyatlar", href: "/#fiyatlar" },
+{ label: "Fiyatlar", href: "/fiyatlar" },
  { label: "İletişim", href: "/#iletisim" },
 ];
 

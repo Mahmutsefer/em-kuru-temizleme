@@ -4678,6 +4678,7 @@ background: #B0BDA3;
 .prices-page {
   background: var(--cream);
   min-height: 100vh;
+  padding-top: 80px;
 }
 
 .prices-container {
@@ -4688,7 +4689,6 @@ background: #B0BDA3;
 .prices-hero {
   padding: 100px 0 60px;
 }
-
 .prices-hero .section-label {
   margin-bottom: 18px;
 }
