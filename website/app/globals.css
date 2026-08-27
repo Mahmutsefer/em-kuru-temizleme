@@ -433,10 +433,22 @@ footer p {
     text-align: center;
   }
 
-  .footer-links {
-    flex-wrap: wrap;
-    gap: 18px;
-  }
+ .footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 20px;
+  width: 100%;
+  align-items: start;
+}
+
+.footer-links > div {
+  width: 100%;
+  text-align: left;
+}
+
+.footer-links > div:nth-child(3) {
+  grid-column: 1 / -1;
+}
 }
 
 @media (max-width: 500px) {
