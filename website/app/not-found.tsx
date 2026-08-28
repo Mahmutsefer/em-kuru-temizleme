@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <main className="not-found">
       <div className="not-found-content">
-        <p className="section-label">EM KURU TEMİZLEME</p>
+      <p className="section-label">HASEL KURU TEMİZLEME</p>
 
         <h1>Sayfa bulunamadı.</h1>
 

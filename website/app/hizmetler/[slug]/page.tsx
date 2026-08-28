@@ -244,16 +244,28 @@ export default async function ServicePage({
 
       {/* SERVICE INFORMATION */}
     {/* SERVICE INFORMATION */}
+{/* SERVICE INFORMATION */}
+
 <section className="service-information">
 
-  {(slug === "kuru-temizleme" || slug === "ev-tekstili") &&
-  "items" in service && (
-    <DryCleaningGallery
-      items={service.items}
-    />
+{slug === "koltuk-yikama" && ( <div className="service-highlight"> <span className="service-highlight-mark">✓</span> <div> <h3>İşlem görmemiş lekelerde leke çıkarma garantisi.</h3> <p>
+İşlem görmemiş lekeler için profesyonel leke çıkarma uygulaması
+sunuyoruz. </p> </div> </div>
+)}
+
+{slug === "hali-yikama" && ( <div className="service-highlight"> <span className="service-highlight-mark">✓</span> <div> <h3>Yerinde halı yıkama hizmeti.</h3> <p>
+Halılarınızı yerinizden almadan, profesyonel ekipmanlarımızla
+bulunduğunuz yerde yıkıyoruz. Hızlı ve pratik bir temizlik hizmeti. </p> </div> </div>
+)}
+
+{(slug === "kuru-temizleme" || slug === "ev-tekstili") &&
+"items" in service && ( <DryCleaningGallery
+   items={service.items}
+ />
 )}
 
 </section>
+
       {/* PROCESS */}
       <section className="service-process">
 
