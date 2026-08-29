@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-container">
-      <a href="#" className="navbar-logo" onClick={closeMenu}>
+     <a href="/" className="navbar-logo" onClick={closeMenu}>
   <Image
    src="/images/default.svg"
     alt="Hasel Kuru Temizleme"

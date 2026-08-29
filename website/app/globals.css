@@ -2733,7 +2733,7 @@ footer p {
 ========================= */
 
 .navbar {
-  position: absolute;
+position: fixed;
 
   top: 0;
   left: 0;
@@ -2989,7 +2989,7 @@ background: #B0BDA3;
 
 @media (max-width: 750px) {
   .navbar {
-    position: absolute;
+        position: fixed;
     z-index: 9999;
   }
 
