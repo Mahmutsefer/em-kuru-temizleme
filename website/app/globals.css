@@ -839,10 +839,19 @@ footer p {
 @media (max-width: 900px) {
   .navbar-container {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .menu-button {
     display: flex;
+    order: 1;
+  }
+
+  .navbar-logo {
+    order: 2;
+    margin-left: auto;
   }
 
   .navbar-nav {
