@@ -837,22 +837,21 @@ footer p {
 /* Mobile */
 
 @media (max-width: 900px) {
-  .navbar-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+ .navbar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .menu-button {
-    display: flex;
-    order: 1;
-  }
+.navbar-logo {
+  order: 1;
+}
 
-  .navbar-logo {
-    order: 2;
-    margin-left: auto;
-  }
+.menu-button {
+  display: flex;
+  order: 2;
+}
 
   .navbar-nav {
     position: absolute;
