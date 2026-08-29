@@ -6,29 +6,73 @@ const branches = [
     address: "Dikilitaş, Emirhan Cd, No:81, 34349 Beşiktaş / İstanbul",
     phone: "0212 327 45 23",
     hours: "08:00 - 20:00",
-    maps: "https://share.google/50vm4f2NE6he75JsW",
   },
   {
     name: "Hasel Kuru Temizleme Fulya",
     address: "Fulya, Ortaklar Cd, Öke Ap. 22/D, 34394 Şişli / İstanbul",
     phone: "0212 288 28 82",
     hours: "08:00 - 21:00",
-    maps: "https://share.google/IBN5LMQdgWdlwWzn1",
   },
   {
     name: "TGS Halı Yıkama",
     address: "Paşa, Çakıl Sk. No:1/B, 34379 Şişli / İstanbul",
     phone: "0532 326 70 71",
     hours: "08:00 - 21:00",
-    maps: "https://share.google/dPianRUxSaf0omX4p",
   },
 ];
+
+const handleDirections = (address: string) => {
+  const encodedAddress = encodeURIComponent(address);
+  const userAgent = navigator.userAgent;
+
+  const isIOS = /iPad|iPhone|iPod/.test(userAgent);
+  const isAndroid = /Android/.test(userAgent);
+
+  if (isAndroid) {
+    window.location.href =
+      "https://www.google.com/maps/dir/?api=1&destination=" +
+      encodedAddress +
+      "&travelmode=driving";
+    return;
+  }
+
+  if (isIOS) {
+    const googleMapsUrl =
+      "comgooglemaps://?daddr=" +
+      encodedAddress +
+      "&directionsmode=driving";
+
+    const appleMapsUrl =
+      "http://maps.apple.com/?daddr=" +
+      encodedAddress +
+      "&dirflg=d";
+
+    const startTime = Date.now();
+
+    window.location.href = googleMapsUrl;
+
+    setTimeout(() => {
+      if (Date.now() - startTime < 1800) {
+        window.location.href = appleMapsUrl;
+      }
+    }, 1200);
+
+    return;
+  }
+
+  window.open(
+    "https://www.google.com/maps/dir/?api=1&destination=" +
+      encodedAddress +
+      "&travelmode=driving",
+    "_blank",
+    "noopener,noreferrer"
+  );
+};
 
 export default function Branches() {
   return (
     <section className="branches-section" id="subelerimiz">
       <div className="branches-container">
-
         <div className="branches-heading">
           <p className="section-label">ŞUBELERİMİZ</p>
 
@@ -48,15 +92,12 @@ export default function Branches() {
         <div className="branches-grid">
           {branches.map((branch) => (
             <div className="branch-card" key={branch.name}>
-
               <div className="branch-card-top">
                 <div className="branch-icon">📍</div>
-
                 <h3>{branch.name}</h3>
               </div>
 
               <div className="branch-info">
-
                 <div className="branch-info-row">
                   <span>Adres</span>
                   <p>{branch.address}</p>
@@ -65,7 +106,7 @@ export default function Branches() {
                 <div className="branch-info-row">
                   <span>Telefon</span>
                   <a
-                    href={`tel:${branch.phone.replace(/\s/g, "")}`}
+                    href={"tel:" + branch.phone.replace(/\s/g, "")}
                   >
                     {branch.phone}
                   </a>
@@ -75,30 +116,27 @@ export default function Branches() {
                   <span>Çalışma Saatleri</span>
                   <p>{branch.hours}</p>
                 </div>
-
               </div>
 
-             <div className="branch-actions">
-  <a
-    href={`tel:${branch.phone.replace(/\s/g, "")}`}
-    className="branch-call-button"
-  >
-    📞 Ara
-  </a>
+              <div className="branch-actions">
+                <a
+                  href={"tel:" + branch.phone.replace(/\s/g, "")}
+                  className="branch-call-button"
+                >
+                  📞 Ara
+                </a>
 
-  <a
-    href={branch.maps}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="branch-directions-button"
-  >
-    📍 Yol Tarifi
-  </a>
-</div>
+                <button
+                  type="button"
+                  onClick={() => handleDirections(branch.address)}
+                  className="branch-directions-button"
+                >
+                  📍 Yol Tarifi
+                </button>
+              </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
