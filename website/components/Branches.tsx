@@ -78,15 +78,23 @@ export default function Branches() {
 
               </div>
 
-              <a
-                href={branch.maps}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="branch-map-button"
-              >
-                Google Maps'te Gör →
-              </a>
+             <div className="branch-actions">
+  <a
+    href={`tel:${branch.phone.replace(/\s/g, "")}`}
+    className="branch-call-button"
+  >
+    📞 Ara
+  </a>
 
+  <a
+    href={branch.maps}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="branch-directions-button"
+  >
+    📍 Yol Tarifi
+  </a>
+</div>
             </div>
           ))}
         </div>

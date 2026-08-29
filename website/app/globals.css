@@ -4527,20 +4527,43 @@ background: #B0BDA3;
   text-decoration: underline;
 }
 
-.branch-map-button {
-  display: block;
+.branch-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
   margin-top: 25px;
-  padding: 15px 20px;
-  text-align: center;
-  background: #0f2721;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-  transition: background 0.3s ease;
 }
 
-.branch-map-button:hover {
+.branch-call-button,
+.branch-directions-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.branch-call-button {
+  background: #0f2721;
+  color: #ffffff;
+}
+
+.branch-call-button:hover {
   background: #1d4035;
+}
+
+.branch-directions-button {
+  background: transparent;
+  color: #0f2721;
+  border: 1px solid rgba(15, 39, 33, 0.25);
+}
+
+.branch-directions-button:hover {
+  background: #f4f6f3;
+  border-color: #0f2721;
 }
 
 /* Mobile */
