@@ -51,13 +51,13 @@ export default function Hero() {
 
       <div className="hero-content">
         <p className="hero-label">
-  HASEL KURU TEMİZLEME
+  HASEL TEMİZLEME SİSTEMLERİ
 </p>
 
         <h1>
           Tertemiz bir yaşam,
           <br />
-          <span>Hasel Kuru Temizleme ile mümkün.</span>
+          <span>HASEL TEMİZLEME SİSTEMLERİ ile mümkün.</span>
         </h1>
 
         <p className="hero-description">

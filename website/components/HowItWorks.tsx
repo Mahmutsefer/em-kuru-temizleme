@@ -45,7 +45,7 @@ export default function HowItWorks() {
           </div>
 
           <p className="em-process-intro">
-            Siz ürünlerinizi hazırlayın, gerisini bize bırakın. Hasel Kuru Temizleme olarak
+            Siz ürünlerinizi hazırlayın, gerisini bize bırakın. Hasel Temizleme Sistemleri olarak
             temizlik sürecinin her aşamasında özenle çalışıyoruz.
           </p>
         </div>

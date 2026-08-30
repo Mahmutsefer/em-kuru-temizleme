@@ -50,7 +50,7 @@ export default function Services() {
           <h2>
             İhtiyacınız olan
             <br />
-            temizlik hizmeti Hasel Kuru Temizleme&apos;de.
+            temizlik hizmeti HASEL Temizleme Sistemleri&apos;nde.
           </h2>
         </div>
 

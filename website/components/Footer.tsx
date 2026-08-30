@@ -98,7 +98,7 @@ export default function Footer() {
       <div className="footer-bottom">
 
         <p>
-          © 2026 Hasel Kuru Temizleme. Tüm hakları saklıdır.
+          © 2026 HASEL TEMİZLEME SİSTEMLERİ. Tüm hakları saklıdır.
         </p>
 
         <a href="#iletisim">

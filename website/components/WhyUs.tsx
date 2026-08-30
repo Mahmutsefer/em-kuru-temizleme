@@ -41,7 +41,7 @@ export default function WhyUs() {
 
           <div className="why-us-description">
             <p>
-              Hasel Kuru Temizleme olarak kıyafetlerinizi ve tekstil
+              HASEL Temizleme Sistemleri olarak kıyafetlerinizi ve tekstil
               ürünlerinizi yalnızca temizlemiyor, onların
               özelliklerine uygun şekilde bakımını da yapıyoruz.
             </p>

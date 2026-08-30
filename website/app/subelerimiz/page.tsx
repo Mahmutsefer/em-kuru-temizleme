@@ -3,7 +3,7 @@ import Branches from "@/components/Branches";
 export const metadata = {
   title: "Şubelerimiz",
   description:
-    "Hasel Kuru Temizleme şubeleri. Adres, telefon, çalışma saatleri ve yol tarifi bilgileri.",
+    "Hasel Temizleme  şubeleri. Adres, telefon, çalışma saatleri ve yol tarifi bilgileri.",
 };
 
 export default function SubelerimizPage() {
