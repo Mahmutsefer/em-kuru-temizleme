@@ -20,27 +20,27 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="contact-details">
+       <div className="contact-details">
 
-          <div className="contact-item">
-            <span>TELEFON</span>
+  <div className="contact-item">
+    <span>TELEFON</span>
 
-            <a href="tel:+905000000000">
-              +90 500 000 00 00
-            </a>
-          </div>
+    <a href="tel:+905069490031">
+      +90 506 949 00 31
+    </a>
+  </div>
 
-          <div className="contact-item">
-            <span>WHATSAPP</span>
+  <div className="contact-item">
+    <span>WHATSAPP</span>
 
-            <a
-              href="https://wa.me/905000000000"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WhatsApp'tan Yazın →
-            </a>
-          </div>
+    <a
+      href="https://wa.me/905069490031"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      WhatsApp'tan Yazın →
+    </a>
+  </div>
 
           <div className="contact-item">
             <span>ÇALIŞMA SAATLERİ</span>
