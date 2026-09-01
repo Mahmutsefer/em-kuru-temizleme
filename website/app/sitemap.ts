@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://emkurutemizleme.com";
+const baseUrl = "https://haseltemizlemesistemleri.com.tr";
 
 const services = [
   "kuru-temizleme",
