@@ -17,6 +17,7 @@ const priceCategories = [
       { name: "Kazak", price: "300" },
       { name: "Mont", price: "500 - 700  ₺ arası" },
       { name: "Deri Mont", price: "2520 - 3500  ₺ arası" },
+      { name: "Güderi", price: "2520 - 3500  ₺ arası" },
       { name: "Peloş Mont", price: "800 ₺" },
       { name: "Anorak ", price: "500 - 700  ₺ arası" },
       { name: "Palto", price: "800 ₺" },
@@ -47,7 +48,7 @@ const priceCategories = [
       { name: "Bornoz", price: "600 ₺" },
       { name: "Abiye Elbise", price: "1300 ₺den başlıyor" },
       { name: "Bayan Elbisesi", price: "500 ₺" },
-      { name: "Gelinlik", price: "2.000 ₺" },
+      { name: "Gelinlik", price: "4.000 ₺" },
     ],
   },
 

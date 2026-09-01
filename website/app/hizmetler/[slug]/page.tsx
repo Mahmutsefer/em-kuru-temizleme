@@ -336,14 +336,13 @@ bulunduğunuz yerde yıkıyoruz. Hızlı ve pratik bir temizlik hizmeti. </p> </
 
           <div>
 
-            <a href="tel:+905000000000">
-              Bizi Arayın
-            </a>
+           <a href="tel:+905069490031">
+  Bizi Arayın
+</a>
 
-            <a href="https://wa.me/905000000000">
-              WhatsApp
-            </a>
-
+<a href="https://wa.me/905069490031">
+  WhatsApp
+</a>
           </div>
 
         </div>
