@@ -87,7 +87,7 @@ export default function Footer() {
     target="_blank"
     rel="noopener noreferrer"
   >
-    TGS Halı Yıkama
+    Hasel Halı Yıkama Şişli
   </a>
 </div>
 

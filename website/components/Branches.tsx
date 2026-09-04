@@ -14,7 +14,7 @@ const branches = [
     hours: "08:00 - 21:00",
   },
   {
-    name: "TGS Halı Yıkama",
+    name: "Hasel Halı Yıkama Şişli",
     address: "Paşa, Çakıl Sk. No:1/B, 34379 Şişli / İstanbul",
     phone: "0532 326 70 71",
     hours: "08:00 - 21:00",

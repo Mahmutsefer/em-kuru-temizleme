@@ -5,7 +5,7 @@ import PriceCard from "@/components/PriceCard";
 
 const priceCategories = [
   {
-    title: "Kuru Yıkama",
+    title: "Kuru Temizleme",
     image: "/images/services/dry-cleaning/dry-cleaning.jpg",
     items: [
       
@@ -32,7 +32,7 @@ const priceCategories = [
       { name: "Hırka", price: "400 ₺" },
       { name: "Süet", price: "2500 - 3500 ₺ arası" },
       { name: "Süveter", price: "250 ₺" },
-      { name: "kıravar", price: "400 ₺" },
+      { name: "kıravat", price: "400 ₺" },
       { name: "Şal", price: "300 ₺" },
       { name: "Eşarp", price: "300 ₺" },
       { name: "Bermuda", price: "300 ₺" },
@@ -68,7 +68,7 @@ const priceCategories = [
     { name: "Kaban", price: "400 ₺" },
     { name: "Hırka", price: "200 ₺" },
     { name: "Süveter", price: "100 ₺" },
-    { name: "kıravar", price: "100 ₺" },
+    { name: "kıravat", price: "100 ₺" },
     { name: "Şal", price: "150 ₺" },
     { name: "Eşarp", price: "150 ₺" },
     { name: "Bermuda", price: "150 ₺" },

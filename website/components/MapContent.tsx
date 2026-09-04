@@ -24,7 +24,7 @@ const branches = [
     position: [41.0668, 28.9958] as [number, number],
   },
   {
-    name: "TGS Halı Yıkama",
+    name: "Hasel Halı Yıkama Şişli",
     address:
       "Paşa, Çakıl Sk. No:1/B, 34379 Şişli / İstanbul",
     position: [41.0635, 28.9795] as [number, number],
